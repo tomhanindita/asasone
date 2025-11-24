@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Belajar Seru: Bahasa Indonesia + PJOK</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Patrick+Hand&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(#87CEEB, #E0F7FA);
+            font-family: 'Patrick Hand', cursive;
+            padding: 20px 0;
+        }
+
+        h1,
+        h2 {
+            font-family: 'Comic Neue', cursive;
+            color: #FF6B6B;
+            text-shadow: 2px 2px 0 white;
+        }
+
+        .kartu {
+            cursor: pointer;
+            transition: 0.3s;
+            border-radius: 25px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .kartu:hover {
+            transform: scale(1.09);
+        }
+
+        .kartu img {
+            height: 140px;
+            object-fit: contain;
+            background: white;
+            border-radius: 20px;
+            padding: 10px;
+        }
+
+        .modal-content {
+            border-radius: 25px;
+        }
+
+        .modal-header {
+            background: #FF6B6B;
+            color: white;
+            border-radius: 25px 25px 0 0;
+        }
+
+        .btn-close-white {
+            filter: invert(1);
+        }
+
+        .btn-pjok {
+            font-size: 2.2rem;
+            padding: 25px 40px;
+            border-radius: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="text-center my-5">
+            <h1 class="display-2">Belajar Seru Kelas SD</h1>
+            <p class="lead fs-3">Klik kartu untuk belajar!</p>
+        </div>
+
+        <!-- Tombol besar ke PJOK -->
+        <div class="text-center mb-5">
+            <a href="pjok.html" class="btn btn-success btn-pjok shadow-lg">
+                Buka Materi PJOK ⚽
+            </a>
+        </div>
+
+        <h2 class="text-center mb-5">Ringkasan Bahasa Indonesia (11 Poin)</h2>
+
+        <div class="row row-cols-1 row-cols-md-3 g-5">
+
+            <div class="col">
+                <div class="card kartu bg-warning" data-bs-toggle="modal" data-bs-target="#m1">
+                    <img src="https://res.cloudinary.com/dko1bevv1/image/upload/fl_sanitize/v1/coding/thumbs/idea_bulb_cartoon"
+                        alt="Ide Pokok">
+                    <div class="card-body text-center">
+                        <h4>1. Ide Pokok</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card kartu bg-info text-white" data-bs-toggle="modal" data-bs-target="#m2">
+                    <img src="https://res.cloudinary.com/dko1bevv1/image/upload/fl_sanitize/v1/coding/thumbs/info_book_cartoon"
+                        alt="Teks Informatif">
+                    <div class="card-body text-center">
+                        <h4>2. Teks Informatif</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card kartu bg-success text-white" data-bs-toggle="modal" data-bs-target="#m3">
+                    <img src="https://res.cloudinary.com/dko1bevv1/image/upload/fl_sanitize/v1/coding/thumbs/fact_opinion_scale"
+                        alt="Fakta Opini">
+                    <div class="card-body text-center">
+                        <h4>3. Fakta & Opini</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card kartu bg-danger text-white" data-bs-toggle="modal" data-bs-target="#m4">
+                    <img src="https://res.cloudinary.com/dko1bevv1/image/upload/fl_sanitize/v1/coding/thumbs/pantun_scroll"
+                        alt="Pantun">
+                    <div class="card-body text-center">
+                        <h4>4. Pantun</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card kartu bg-primary text-white" data-bs-toggle="modal" data-bs-target="#m5">
+                    <img src="https://res.cloudinary.com/dko1bevv1/image/upload/fl_sanitize/v1/coding/thumbs/majas_star"
+                        alt="Majas">
+                    <div class="card-body text-center">
+                        <h4>5. Majas</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card kartu bg-secondary text-white" data-bs-toggle="modal" data-bs-target="#m6">
+                    <img src="https://res.cloudinary.com/dko1bevv1/image/upload/fl_sanitize/v1/coding/thumbs/dictionary_cartoon"
+                        alt="Makna Kata">
+                    <div class="card-body text-center">
+                        <h4>6. Makna Kata</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card kartu bg-light" data-bs-toggle="modal" data-bs-target="#m7">
+                    <img src="https://res.cloudinary.com/dko1bevv1/image/upload/fl_sanitize/v1/coding/thumbs/big_A_cartoon"
+                        alt="Huruf Kapital">
+                    <div class="card-body text-center">
+                        <h4>7. Huruf Kapital</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card kartu bg-dark text-white" data-bs-toggle="modal" data-bs-target="#m8">
+                    <img src="https://res.cloudinary.com/dko1bevv1/image/upload/fl_sanitize/v1/coding/thumbs/punctuation_fun"
+                        alt="Tanda Baca">
+                    <div class="card-body text-center">
+                        <h4>8. Tanda Baca</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card kartu bg-warning" data-bs-toggle="modal" data-bs-target="#m9">
+                    <img src="https://res.cloudinary.com/dko1bevv1/image/upload/fl_sanitize/v1/coding/thumbs/link_chain"
+                        alt="Kata Hubung">
+                    <div class="card-body text-center">
+                        <h4>9. Kata Hubung</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card kartu bg-info text-white" data-bs-toggle="modal" data-bs-target="#m10">
+                    <img src="https://res.cloudinary.com/dko1bevv1/image/upload/fl_sanitize/v1/coding/thumbs/two_sentences"
+                        alt="Kalimat Majemuk">
+                    <div class="card-body text-center">
+                        <h4>10. Kalimat Majemuk</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card kartu bg-success text-white" data-bs-toggle="modal" data-bs-target="#m11">
+                    <img src="https://res.cloudinary.com/dko1bevv1/image/upload/fl_sanitize/v1/coding/thumbs/explanation_magnifier"
+                        alt="Teks Eksplanasi">
+                    <div class="card-body text-center">
+                        <h4>11. Teks Eksplanasi</h4>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ==================== 11 MODAL LENGKAP ==================== -->
+
+    <!-- 1. Ide Pokok -->
+    <div class="modal fade" id="m1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>1. Ide Pokok</h2><button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body fs-4">
+                    <p><strong>Pengertian:</strong> Pikiran utama atau inti dari sebuah paragraf.</p>
+                    <p><strong>Contoh:</strong><br>
+                        “Olahraga lari memiliki banyak manfaat bagi kesehatan. Dengan berlari, jantung menjadi lebih
+                        sehat dan peredaran darah lancar. Lari juga membakar kalori dan mengurangi stres.”</p>
+                    <p class="text-success fw-bold">Ide pokok: Olahraga lari memiliki banyak manfaat bagi kesehatan.</p>
+                </div>
+                <div class="modal-footer"><button class="btn btn-warning btn-lg" data-bs-dismiss="modal">Paham!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. Teks Informatif -->
+    <div class="modal fade" id="m2">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>2. Teks Informatif</h2><button class="btn-close btn-close-white"
+                        data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body fs-4">
+                    <p>Teks yang memberi fakta & informasi (bukan dongeng atau pendapat).</p>
+                    <p><strong>Contoh:</strong><br>
+                        “Komodo adalah kadal terbesar di dunia. Panjangnya bisa mencapai 3 meter. Komodo hanya hidup di
+                        Taman Nasional Komodo, Indonesia.”</p>
+                </div>
+                <div class="modal-footer"><button class="btn btn-info btn-lg text-white"
+                        data-bs-dismiss="modal">Keren!</button></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. Fakta & Opini -->
+    <div class="modal fade" id="m3">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>3. Fakta & Opini</h2><button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body fs-4">
+                    <p><strong>Fakta</strong> → bisa dibuktikan:<br>
+                        “Presiden pertama Indonesia adalah Ir. Soekarno.”</p>
+                    <p><strong>Opini</strong> → pendapat pribadi:<br>
+                        “Ir. Soekarno adalah orator terhebat di Indonesia.”</p>
+                </div>
+                <div class="modal-footer"><button class="btn btn-success btn-lg text-white"
+                        data-bs-dismiss="modal">Mengerti!</button></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4. Pantun -->
+    <div class="modal fade" id="m4">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>4. Pantun</h2><button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center fs-4">
+                    <p>Pergi ke pasar membeli selasih<br>
+                        Jangan lupa membeli benang<br>
+                        Rajinlah selalu mencari ilmu<br>
+                        Agar hidupmu tidak susah kelak</p>
+                    <p>Baris 1–2 = sampiran<br>Baris 3–4 = isi (pesan)</p>
+                </div>
+                <div class="modal-footer"><button class="btn btn-danger btn-lg text-white"
+                        data-bs-dismiss="modal">Lucu!</button></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 5. Majas -->
+    <div class="modal fade" id="m5">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>5. Majas (Gaya Bahasa)</h2><button class="btn-close btn-close-white"
+                        data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body fs-4">
+                    <ul>
+                        <li><strong>Personifikasi:</strong> “Angin berbisik di telingaku.”</li>
+                        <li><strong>Metafora:</strong> “Dia adalah bunga desa.”</li>
+                        <li><strong>Hiperbola:</strong> “Tangisnya membanjiri seluruh ruangan.”</li>
+                    </ul>
+                </div>
+                <div class="modal-footer"><button class="btn btn-primary btn-lg text-white"
+                        data-bs-dismiss="modal">Indah!</button></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 6. Makna Kata (Denotasi & Konotasi) -->
+    <div class="modal fade" id="m6">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>6. Makna Kata</h2><button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body fs-4">
+                    <p><strong>Denotasi</strong> → arti kamus (asli)<br>
+                        <strong>Konotasi</strong> → arti perasaan/kias</p>
+                    <p>Contoh kata “BUNGA”:<br>
+                        Denotasi: tanaman berwarna-warni<br>
+                        Konotasi: gadis cantik (“bunga desa”)</p>
+                </div>
+                <div class="modal-footer"><button class="btn btn-secondary btn-lg text-white"
+                        data-bs-dismiss="modal">Oke!</button></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 7. Huruf Kapital -->
+    <div class="modal fade" id="m7">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>7. Huruf Kapital</h2><button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body fs-4">
+                    <p>Dipakai untuk:<br>
+                        • Awal kalimat<br>
+                        • Nama orang, tempat, hari, bulan</p>
+                    <p>Benar: Budi dan Sari pergi ke Bandung pada hari Senin.</p>
+                </div>
+                <div class="modal-footer"><button class="btn btn-light btn-lg" data-bs-dismiss="modal">Ingat!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 8. Tanda Baca -->
+    <div class="modal fade" id="m8">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>8. Tanda Baca</h2><button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center fs-4">
+                    <p>Ayo makan. → perintah<br>
+                        Ayo makan? → tanya<br>
+                        Ayo makan! → senang<br>
+                        Budi, Rina, dan Doni bermain bola. → koma untuk daftar</p>
+                </div>
+                <div class="modal-footer"><button class="btn btn-dark btn-lg text-white"
+                        data-bs-dismiss="modal">Jelas!</button></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 9. Kata Hubung (Konjungsi) -->
+    <div class="modal fade" id="m9">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>9. Kata Hubung</h2><button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body fs-4">
+                    <p>dan, atau, tetapi, karena, sehingga, jika, supaya</p>
+                    <p>Contoh:<br>
+                        • Aku suka apel dan jeruk.<br>
+                        • Hujan turun, sehingga kami bermain di dalam rumah.</p>
+                </div>
+                <div class="modal-footer"><button class="btn btn-warning btn-lg"
+                        data-bs-dismiss="modal">Nyambung!</button></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 10. Kalimat Majemuk -->
+    <div class="modal fade" id="m10">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>10. Kalimat Majemuk</h2><button class="btn-close btn-close-white"
+                        data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body fs-4">
+                    <p><strong>Setara:</strong> Ayah membaca koran dan ibu memasak.<br>
+                        <strong>Bertingkat:</strong> Kami akan piknik jika cuaca cerah.</p>
+                </div>
+                <div class="modal-footer"><button class="btn btn-info btn-lg text-white"
+                        data-bs-dismiss="modal">Panjang!</button></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 11. Teks Eksplanasi -->
+    <div class="modal fade" id="m11">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>11. Teks Eksplanasi</h2><button class="btn-close btn-close-white"
+                        data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body fs-4">
+                    <p>Menjelaskan “kenapa” dan “bagaimana” sesuatu terjadi.</p>
+                    <p>Contoh judul:<br>
+                        • Proses Terjadinya Hujan<br>
+                        • Bagaimana Gunung Meletus<br>
+                        • Mengapa Pelangi Muncul Setelah Hujan</p>
+                </div>
+                <div class="modal-footer"><button class="btn btn-success btn-lg text-white"
+                        data-bs-dismiss="modal">Selesai!</button></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
