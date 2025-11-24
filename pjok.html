@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PJOK SD - 5 Bab Seru!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Patrick+Hand&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(#7ED957, #C1FF72);
+            font-family: 'Patrick Hand', cursive;
+            padding: 20px 0;
+        }
+
+        h1 {
+            font-family: 'Comic Neue', cursive;
+            color: #FF6B00;
+            text-shadow: 3px 3px 0 white;
+        }
+
+        .kartu {
+            cursor: pointer;
+            transition: 0.3s;
+            border-radius: 25px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .kartu:hover {
+            transform: scale(1.1);
+        }
+
+        .kartu img {
+            height: 150px;
+            object-fit: contain;
+            background: white;
+            border-radius: 20px;
+            padding: 10px;
+        }
+
+        .modal-content {
+            border-radius: 25px;
+        }
+
+        .modal-header {
+            background: #FF6B00;
+            color: white;
+            border-radius: 25px 25px 0 0;
+        }
+
+        .btn-close-white {
+            filter: invert(1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="text-center my-5">
+            <h1 class="display-2">PJOK SD</h1>
+            <p class="lead fs-3">Klik kartu untuk belajar & main!</p>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 g-5">
+
+            <!-- 1. Sepak Bola -->
+            <div class="col">
+                <div class="card kartu text-center bg-danger text-white" data-bs-toggle="modal" data-bs-target="#m1">
+                    <img src="https://res.cloudinary.com/dko1bevv1/image/upload/fl_sanitize/v1/pjok/soccer_kids"
+                        alt="Sepak Bola">
+                    <div class="card-body">
+                        <h3>1. Sepak Bola</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Renang -->
+            <div class="col">
+                <div class="card kartu text-center bg-info text-white" data-bs-toggle="modal" data-bs-target="#m2">
+                    <img src="https://res.cloudinary.com/dko1bevv1/image/upload/fl_sanitize/v1/pjok/swimming_kids"
+                        alt="Renang">
+                    <div class="card-body">
+                        <h3>2. Renang</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Bola Voli -->
+            <div class="col">
+                <div class="card kartu text-center bg-warning" data-bs-toggle="modal" data-bs-target="#m3">
+                    <img src="https://res.cloudinary.com/dko1bevv1/image/upload/fl_sanitize/v1/pjok/volleyball_kids"
+                        alt="Bola Voli">
+                    <div class="card-body">
+                        <h3>3. Bola Voli</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. Kasti & Rounders -->
+            <div class="col">
+                <div class="card kartu text-center bg-success text-white" data-bs-toggle="modal" data-bs-target="#m4">
+                    <img src="https://res.cloudinary.com/dko1bevv1/image/upload/fl_sanitize/v1/pjok/kasti_rounders"
+                        alt="Kasti & Rounders">
+                    <div class="card-body">
+                        <h3>4. Kasti & Rounders</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. Lompat Jauh -->
+            <div class="col">
+                <div class="card kartu text-center bg-primary text-white" data-bs-toggle="modal" data-bs-target="#m5">
+                    <img src="https://res.cloudinary.com/dko1bevv1/image/upload/fl_sanitize/v1/pjok/long_jump_kids"
+                        alt="Lompat Jauh">
+                    <div class="card-body">
+                        <h3>5. Lompat Jauh</h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ==================== MODAL LENGKAP ==================== -->
+
+    <!-- 1. Sepak Bola -->
+    <div class="modal fade" id="m1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>1. Sepak Bola</h2><button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body fs-4">
+                    <p><strong>Pengertian:</strong><br>Olahraga tim 11 lawan 11, memasukkan bola ke gawang lawan pakai
+                        kaki (kecuali kiper).</p>
+                    <p><strong>Tendangan Penalty:</strong><br>Dari jarak 11 meter. Hanya penendang & kiper di kotak
+                        penalty.</p>
+                    <p><strong>Ukuran Lapangan (internasional):</strong><br>Panjang 100–110 m<br>Lebar 64–75 m</p>
+                    <p><strong>Jumlah Pemain:</strong><br>1 tim = 11 orang (termasuk 1 kiper)<br>Total di lapangan = 22
+                        orang</p>
+                </div>
+                <div class="modal-footer"><button class="btn btn-danger btn-lg text-white"
+                        data-bs-dismiss="modal">Golll!</button></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. Renang -->
+    <div class="modal fade" id="m2">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>2. Renang</h2><button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body fs-4">
+                    <p><strong>4 Macam Gaya Renang:</strong></p>
+                    <ol>
+                        <li>Gaya Bebas (Crawl)</li>
+                        <li>Gaya Dada (Breaststroke)</li>
+                        <li>Gaya Punggung (Backstroke)</li>
+                        <li>Gaya Kupu-Kupu (Butterfly)</li>
+                    </ol>
+                    <p><strong>Teknik Gaya Bebas:</strong></p>
+                    <ul>
+                        <li>Badan telungkup & sejajar air</li>
+                        <li>Lengan bergantian seperti kincir</li>
+                        <li>Kaki tendang naik-turun (flutter kick)</li>
+                        <li>Nafas: miringkan kepala ke samping</li>
+                    </ul>
+                    <p><strong>Induk Organisasi Indonesia:</strong> PRSI</p>
+                </div>
+                <div class="modal-footer"><button class="btn btn-info btn-lg text-white"
+                        data-bs-dismiss="modal">Splash!</button></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. Bola Voli -->
+    <div class="modal fade" id="m3">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>3. Bola Voli</h2><button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body fs-4">
+                    <p><strong>Diciptakan oleh:</strong> William G. Morgan tahun 1895 (awalnya bernama Mintonette)</p>
+                    <p><strong>Ukuran Lapangan:</strong> 18 × 9 meter</p>
+                    <p><strong>Jumlah Pemain:</strong> 6 orang di lapangan</p>
+                    <p><strong>Pemain & Tugas:</strong></p>
+                    <ul>
+                        <li>Setter/Tosser → pengumpan</li>
+                        <li>Smasher/Spiker → penyerang</li>
+                        <li>Libero → bertahan (baju beda)</li>
+                        <li>Blocker → menahan smash lawan</li>
+                    </ul>
+                    <p><strong>Induk Organisasi:</strong><br>Dunia: FIVB<br>Indonesia: PBVSI</p>
+                </div>
+                <div class="modal-footer"><button class="btn btn-warning btn-lg" data-bs-dismiss="modal">Smash!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4. Kasti & Rounders -->
+    <div class="modal fade" id="m4">
+        <div class="modal-dialog modal-lg">
+            <div class impress="modal-content">
+                <div class="modal-header">
+                    <h2>4. Bola Kasti & Rounders</h2><button class="btn-close btn-close-white"
+                        data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body fs-4">
+                    <p><strong>Bentuk Lapangan:</strong> Segi lima / persegi panjang dengan base</p>
+                    <p><strong>Jumlah Pemain:</strong><br>Kasti = 12 orang/tim<br>Rounders = 9 orang/tim</p>
+                    <p><strong>Alat:</strong><br>• Tongkat kayu (Kasti 50–60 cm, Rounders 40–50 cm)<br>• Bola
+                        tenis/kasti kecil</p>
+                    <p><strong>Jumlah Base:</strong><br>Kasti = 2 base (pertolongan & bebas)<br>Rounders = 4–5 base</p>
+                </div>
+                <div class="modal-footer"><button class="btn btn-success btn-lg text-white" data-bs-dismiss="modal">Home
+                        Run!</button></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 5. Lompat Jauh -->
+    <div class="modal fade" id="m5">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>5. Lompat Jauh</h2><button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body fs-4">
+                    <p><strong>Ukuran Bak Lompat:</strong><br>Panjang minimal 9 m<br>Lebar 2,75 m<br>Lintasan awalan
+                        minimal 40 m</p>
+                    <p><strong>4 Tahap Teknik:</strong></p>
+                    <ol>
+                        <li><strong>Awalan</strong> → lari cepat</li>
+                        <li><strong>Tolakan</strong> → dorong kuat dengan 1 kaki</li>
+                        <li><strong>Melayang</strong> → gaya jongkok / gantung</li>
+                        <li><strong>Mendarat</strong> → kedua kaki sejajar, condong ke depan</li>
+                    </ol>
+                </div>
+                <div class="modal-footer"><button class="btn btn-primary btn-lg text-white"
+                        data-bs-dismiss="modal">Terbang!</button></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
